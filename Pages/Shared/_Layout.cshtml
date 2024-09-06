@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Supreme Cars Ireland.</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap">
+
+
+
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/images/Supremecar.jpg.png" alt="Supreme Cars">
+            </div>
+            <nav>
+                <ul id="nav-menu" class="nav-menu">
+                    <li><a href="/">Supreme Cars Ireland</a></li>
+                  
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <img src="/images/Supremecar.jpg.png" alt="Supreme Cars Logo" class="footer-logo">
+            <p>&copy; 2024 Supreme Cars. All rights reserved.</p>
+            <ul class="contact-info">
+                <li><i class="fas fa-phone"></i> <a href="tel:+083-3961576">083-3961576</a></li>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:supremecarsireland@gmail.com">supremecarsireland@gmail.com</a></li>
+            </ul>
+            <ul class="social-media">
+                <li class="facebook"><a href="https://www.facebook.com/Supremecarsireland" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="twitter"><a href="https://twitter.com/yourprofile" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                <li class="instagram"><a href="https://www.instagram.com/supremecarsireland" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+    <script src="~/js/site.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
